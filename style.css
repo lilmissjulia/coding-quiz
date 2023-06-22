@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: royalblue;
+}
+
+.start-screen, .score-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#start-button, #restart {
+    font-size: 1.33em;
+    padding: 0.5em, 1.8em;
+    border-radius: 0.2em;
+}
+
+#restart {
+    margin-top: 0.9em;
+}
+
+#display-container {
+    background-color: aliceblue;
+    padding: 3.1em 1.8em;
+    width: 80%;
+    max-width: 37.5em;
+    margin: 0 auto;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 0.6em;
+}
+
+.header {
+    margin-bottom: 1.8em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.6em;
+    border-bottom: 0.1em solid whitesmoke;
+}
+
+.timer-div {
+    background-color: aliceblue;
+    width: 7.5em;
+    border-radius: 1.8em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7em 1.8em;
+}
+
+.question {
+    margin-bottom: 1.25em;
+    font-weight: 600;
+}
+
+.options-div {
+    font-size: 0.9em;
+    width: 100%;
+    padding: 1em;
+    margin: 0.3em 0;
+    text-align: left;
+    outline: none;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 0.3em;
+}
+
+.options-div:disabled{
+    color: black;
+    cursor: not-allowed;
+}
+
+#next-button{
+    font-size: 1em;
+    margin-top: 1.5em;
+    background-color: black;
+    color: aliceblue;
+    padding: 0.7em 1.8em;
+    border-radius: 0.3em;
+    float: right;
+}
+
+.hide{
+    display: none;
+}
+
+.incorrect{
+    background-color: pink;
+    color: red;
+    border-colour: red;
+}
+
+.incorrect{
+    background-color: palegoldenrod;
+    color: green;
+    border-colour: green;
+}
+
+
+#user-score {
+    font-size: 1.5em;
+    color: white;
+}
+
+
